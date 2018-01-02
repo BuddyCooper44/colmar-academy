@@ -6,7 +6,15 @@ html {
   background-color: white;
 }
 
+.container {
+  display: flex;
+}
+
 /*Header*/
+
+header {
+
+}
 
 .mobile {
   display: none;
