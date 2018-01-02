@@ -26,6 +26,9 @@ h3 {
   font-size: 1.5rem;
 }
 
+.back-gray {
+  background-color: lightgray;
+}
 /*Header*/
 
 header {
@@ -62,20 +65,13 @@ nav li {
 }
 
 /* Banner */
-.banner {
-  background-color: lightgray;
-}
-
-.banner .flex {
+.banner .picture {
+  max-width: 60%;
   padding: 2rem 1.5rem;
 }
 
-.picture {
-  max-width: 60%;
-}
-
-.banner .flex img {
-  padding-right: 1.5rem;
+.picture img {
+  max-width: 100%;
 }
 
 .everyday {
@@ -88,11 +84,7 @@ nav li {
   margin-left: 1.5rem;
 }
 
-.everyday h1 {
-  padding-bottom: 1.5rem;
-}
-
-.everyday h3 {
+.everyday h1, .everyday h3 {
   padding-bottom: 1.5rem;
 }
 
@@ -104,33 +96,45 @@ nav li {
 }
 
 /* Information */
-.left {
+.information .left {
   max-width: 60%;
-  padding: 2rem 1.5rem 2rem 1.5rem;
-}
-
-.right {
-  max-width: 40%;
+  padding: 2rem 1.5rem;
 }
 
 .left img {
   max-width: 100%;
-  padding-bottom: 2rem;
 }
 
 .left h1 {
-  padding-bottom: 1.5rem;
-}
-
-.block.flex img {
-  max-width: 35%;
-  height: 12rem;
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 2rem 0rem;
 }
 
 .information .right {
-  border-left: 1px solid gray;
+  border-left: 1px solid lightgray;
 }
+
+.block.flex {
+  align-items: center;
+}
+
+.block.flex:first-of-type {
+  padding-top: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.side-pic {
+  max-width: 35%
+}
+
+.desktop {
+  max-width: 100%;
+  padding: 1rem;
+}
+
 .specifics {
-  max-width: 65%;
+  padding-left: 2rem;
+}
+
+.specifics h3, .specifics p {
+  padding-bottom: 0.5rem;
 }
