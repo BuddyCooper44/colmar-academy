@@ -11,34 +11,38 @@
   <body>
 
     <!--Header-->
-    <header class="container">
-      <div class="logo container">
+    <header class="header flex">
+      <div class="logo flex">
         <img src="resources/images/ic-logo.svg" alt="Lion">
-        <span>COLMAR</span><span>ACADEMY</span>
+        <span class="bold">COLMAR</span><span class="gray">ACADEMY</span>
       </div>
-      <nav>
-        <ul class="container">
-          <li>On campus</li>
-          <li>Online</li>
-          <li>For companies</li>
-          <li>Sign in</li>
-        </ul>
-      </nav>
-      <nav class="mobile container">
-        <ul>
-          <li><img src="resources/images/ic-logo.svg" alt="lion logo"></li>
-          <li><img src="resources/images/ic-on-campus.svg" alt="chair on campus"></li>
-          <li><img src="resources/images/ic-online.svg" alt="monitor online"></li>
-          <li><img src="resources/images/ic-login.svg" alt="login"></li>
-        </ul>
-      </nav>
+      <div class="nav">
+        <nav>
+          <ul class="flex">
+            <li>On campus</li>
+            <li>Online</li>
+            <li>For companies</li>
+            <li>Sign in</li>
+          </ul>
+        </nav>
+        <nav class="mobile">
+          <ul class="flex">
+            <li><img src="resources/images/ic-logo.svg" alt="lion logo"></li>
+            <li><img src="resources/images/ic-on-campus.svg" alt="chair on campus"></li>
+            <li><img src="resources/images/ic-online.svg" alt="monitor online"></li>
+            <li><img src="resources/images/ic-login.svg" alt="login"></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!--banner-->
     <div class="banner">
-      <div class="container">
-        <img src="resources/images/banner.jpg" alt="banner students reading">
-        <div class="everday">
+      <div class="flex">
+        <div class="left">
+          <img src="resources/images/banner.jpg" alt="banner students reading">
+        </div>
+        <div class="everyday">
           <h1>Learn something new everday</h1>
           <h3>Lorem ipsum dolor sit amet, consectetur adispiscing elit.</h3>
           <p>Start here</p>
@@ -47,17 +51,19 @@
     </div>
 
     <!--information-->
-    <div class="information container">
+    <div class="information flex">
       <div class="left">
         <img src="resources/images/information-main.jpg" alt="student reading">
         <h1>It doesn't hurt to keep practicing</h1>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
           nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget
           magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+        <br><br><br>
+        <p>Emanuel, Sr Strategist at Hiring.com</p>
       </div>
       <div class="right">
         <div class="stack">
-          <div class="block container">
+          <div class="block flex">
             <img class="desktop" src="resources/images/information-orientation.jpg" alt="shadows of people walking">
             <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="shadows of people walking">
             <div class="specifics">
@@ -66,7 +72,7 @@
               <a href=#>Read more</a>
             </div>
           </div>
-          <div class="block container">
+          <div class="block flex">
             <img class="desktop" src="resources/images/information-campus.jpg" alt="study room map on wall">
             <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="study room map on wall">
             <div class="specifics">
@@ -75,7 +81,7 @@
               <a href=#>Read more</a>
             </div>
           </div>
-          <div class="block container">
+          <div class="block flex">
             <img class="desktop" src="resources/images/information-guest-lecture.jpg" alt="man with beard in beret and glasses">
             <img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="man with beard in beret and glasses">
             <div class="specifics">
@@ -91,8 +97,8 @@
     <!--courses-->
     <div class="courses">
       <h2>Start learning</h2>
-      <div class="curriculum container">
-        <div id="course container">
+      <div class="curriculum flex">
+        <div id="course flex">
           <img src="resources/images/course-software.jpg" alt="computer screens">
           <div class="block">
             <h3>Software engineering</h3>
@@ -100,7 +106,7 @@
             <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
-        <div id="course container">
+        <div id="course flex">
           <img src="resources/images/course-computer-art.jpg" alt="mobile phone">
           <div class="block">
             <h3>Computer Art</h3>
@@ -108,7 +114,7 @@
             <p>Imaging & Design, Motion Graphics & Visual Effects, Computer Animation</p>
           </div>
         </div>
-        <div id="course container">
+        <div id="course flex">
           <img src="resources/images/course-design.jpg" alt="photographer camera">
           <div class="block">
             <h3>Design</h3>
@@ -116,7 +122,7 @@
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
         </div>
-        <div id="course container">
+        <div id="course flex">
           <img src="resources/images/course-data.jpg" alt="laptop charts">
           <div class="block">
             <h3>Data</h3>
@@ -124,7 +130,7 @@
             <p>Data Science, Big Data, SQL, Data Visualization</p>
           </div>
         </div>
-        <div id="course container">
+        <div id="course flex">
           <img src="resources/images/course-business.jpg" alt="chess pieces">
           <div class="block">
             <h3>Business</h3>
@@ -132,7 +138,7 @@
             <p>Product Development, Business Development, Startup</p>
           </div>
         </div>
-        <div id="course container">
+        <div id="course flex">
           <img src="resources/images/course-marketing.jpg" alt="person checking a smart watch">
           <div class="block">
             <h3>Marketing</h3>
@@ -156,7 +162,7 @@
     <!-- Thesis Exhbits-->
     <div class="thesis">
       <h2>Thesis exhibit</h2>
-      <div class="container">
+      <div class="flex">
         <div class="left">
           <video>
             <source src="resources/videos/thesis.mp4" type="video/mp4">
@@ -166,16 +172,16 @@
               nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget
               magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         </div>
-        <div class="right container">
+        <div class="right flex">
           <div class="stack">
-            <div class="block container">
+            <div class="block flex">
               <img src="resources/images/thesis-fisma.jpg" alt="phone on desk with papers">
               <div class="specifics">
                 <h3>Fisma: Design and Prototype</h3>
                 <p>Designer showcase of new prototype product</p>
               </div>
             </div>
-            <div class="block container">
+            <div class="block flex">
               <img src="resources/images/thesis-now-and-then.jpg" alt="empire state building">
               <div class="specifics">
                 <h3>Now and then</h3>

@@ -6,16 +6,131 @@ html {
   background-color: white;
 }
 
-.container {
+.flex {
   display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 /*Header*/
 
 header {
-
+  height: 4rem;
 }
 
-.mobile {
-  display: none;
+header img {
+  height: 2.5rem;
+}
+
+.header.flex {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1.5rem;
+}
+
+.logo.flex {
+  align-items: center;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.bold {
+  font-style: bold;
+}
+
+.gray {
+  color: gray;
+  opacity: .9;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+/* Banner */
+.banner {
+  background-color: lightgray;
+}
+
+.banner .flex {
+  padding: 2rem 1.5rem;
+}
+
+.picture {
+  max-width: 60%;
+}
+
+.banner .flex img {
+  padding-right: 1.5rem;
+}
+
+.everyday {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: navy;
+  font-style: bold;
+  max-width: 30%;
+  margin-left: 1.5rem;
+}
+
+.everyday h1 {
+  padding-bottom: 1.5rem;
+}
+
+.everyday h3 {
+  padding-bottom: 1.5rem;
+}
+
+.everyday p {
+  color: white;
+  background-color: navy;
+  padding: .5rem;
+  text-align: center;
+}
+
+/* Information */
+.left {
+  max-width: 60%;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.right {
+  max-width: 40%;
+}
+
+.left img {
+  max-width: 100%;
+  padding-bottom: 2rem;
+}
+
+.left h1 {
+  padding-bottom: 1.5rem;
+}
+
+.block.flex img {
+  max-width: 35%;
+  height: 12rem;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.information .right {
+  border-left: 1px solid gray;
+}
+.specifics {
+  max-width: 65%;
 }
