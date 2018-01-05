@@ -20,10 +20,16 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  font-style: bold;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+p, a, span {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
 }
 
 .back-gray {
@@ -31,7 +37,7 @@ h3 {
 }
 /*Header*/
 
-header {
+.header .desktop {
   height: 4rem;
 }
 
@@ -39,7 +45,7 @@ header img {
   height: 2.5rem;
 }
 
-.header.flex {
+.desktop.flex {
   align-items: center;
   justify-content: space-between;
   padding: 0rem 1.5rem;
@@ -64,6 +70,26 @@ nav li {
   padding-left: 1rem;
 }
 
+header .mobile .flex {
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  header .mobile {
+    display: block;
+  }
+  nav li {
+    padding-left: 0rem;
+  }
+  header ul {
+    height: 4rem;
+  }
+  .header .desktop {
+    display: none;
+  }
+
+}
 /* Banner */
 .banner .picture {
   max-width: 60%;
@@ -95,6 +121,26 @@ nav li {
   text-align: center;
 }
 
+@media only screen and (max-width: 700px) {
+  .banner.flex {
+    display: block;
+  }
+
+  .everyday {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .banner .picture {
+    max-width: 100%;
+    padding: 0rem;
+  }
+
+  .everyday {
+    margin-left: 0px;
+  }
+}
+
 /* Information */
 .information .left {
   max-width: 60%;
@@ -119,13 +165,15 @@ nav li {
 
 .block.flex:first-of-type {
   padding-top: 1rem;
+  border-bottom: 1px solid gray;
+  border-style: double;
 }
 
 .side-pic {
   max-width: 35%
 }
 
-.desktop {
+.side-pic img {
   max-width: 100%;
   padding: 1rem;
 }
@@ -138,13 +186,64 @@ nav li {
   padding-bottom: 0.5rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .information .left {
+    display: none;
+  }
+
+  .side-pic .desktop {
+    display: none;
+  }
+
+  .side-pic .mobile {
+    display: block;
+  }
+
+  .block.flex {
+    display: block;
+  }
+
+  .side-pic {
+    max-width: 100%;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .information .right {
+    border-left: 0px;
+    padding: 1rem;
+  }
+
+  .specifics {
+    padding: 1rem 1rem;
+  }
+
+  .side-pic img {
+    max-width: 100%;
+    padding: 0rem;
+  }
+
+  .block.flex:first-of-type {
+    padding-top: 0rem;
+  }
+
+  .block.back-gray {
+    background-color: white;
+  }
+
+}
 /* Courses */
 .courses h2 {
   text-align: center;
   padding-top: 2rem;
 }
 
-.curriculum {
+.curriculum.flex {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 2rem 4.5rem;
@@ -177,6 +276,28 @@ nav li {
 .class p {
   padding-top: .5rem;
   line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .courses .curriculum {
+    display: none;
+  }
+
+  .courses.back-gray {
+    background-color: white;
+  }
+
+  .mobile.curriculum {
+    display: block;
+    padding: 1rem;
+  }
+
+  .mobile.curriculum li {
+    background-color: lightgray;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+  }
+
 }
 
 /* Thesis */
@@ -218,6 +339,24 @@ nav li {
   align-items: center;
 }
 
+@media only screen and (max-width: 701px) {
+  .exhibits {
+    display: none;
+  }
+
+  .thesis .left {
+    max-width: 100%;
+    padding: 0rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .thesis .left h3, .thesis .left p {
+    display: none;
+  }
+}
+
+
+/* Footer */
 footer {
   border-top: 1px solid lightgray;
   height: 3rem;
@@ -230,4 +369,14 @@ footer {
 
 .terms span {
   padding-left: 0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .terms {
+    display: none;
+  }
+
+  footer {
+    height: auto;
+  }
 }
