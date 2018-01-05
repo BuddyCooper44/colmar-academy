@@ -1,9 +1,9 @@
 /*Universal Styles*/
 
 html {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 16px;
-  background-color: white;
+  background-color: #E8E8E8
 }
 
 .flex {
@@ -20,11 +20,15 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-style: bold;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.2rem;
+}
+
+h1, h2 {
+  color: #0A4A69;
 }
 
 p, a, span {
@@ -33,10 +37,12 @@ p, a, span {
 }
 
 .back-gray {
-  background-color: lightgray;
+  background-color: #12924A;
 }
 /*Header*/
-
+header {
+  background-color: #E8E8E8
+}
 .header .desktop {
   height: 4rem;
 }
@@ -58,12 +64,11 @@ header img {
 }
 
 .bold {
-  font-style: bold;
+  font-weight: bold;
 }
 
 .gray {
-  color: gray;
-  opacity: .9;
+  color: #444444;
 }
 
 nav li {
@@ -104,8 +109,8 @@ header .mobile .flex {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: navy;
-  font-style: bold;
+  color: #0A4A69;
+  font-weight: bold;
   max-width: 30%;
   margin-left: 1.5rem;
 }
@@ -115,8 +120,8 @@ header .mobile .flex {
 }
 
 .everyday p {
-  color: white;
-  background-color: navy;
+  color: #E8E8E8;
+  background-color: #0A4A69;
   padding: .5rem;
   text-align: center;
 }
@@ -233,7 +238,7 @@ header .mobile .flex {
   }
 
   .block.back-gray {
-    background-color: white;
+    background-color: #E8E8E8;
   }
 
 }
@@ -260,8 +265,8 @@ header .mobile .flex {
 }
 
 #course .class {
-  background-color: white;
-  margin-top: -2px;
+  background-color: #E8E8E8;
+  margin-top: -3px;
 
 }
 
@@ -284,7 +289,9 @@ header .mobile .flex {
   }
 
   .courses.back-gray {
-    background-color: white;
+    background-color: #E8E8E8;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
   }
 
   .mobile.curriculum {
