@@ -28,7 +28,7 @@ h3 {
 }
 
 h1, h2 {
-  color: #0A4A69;
+  color: #041E42;
 }
 
 p, a, span {
@@ -37,7 +37,7 @@ p, a, span {
 }
 
 .back-gray {
-  background-color: #12924A;
+  background-color: #DBED98;
 }
 /*Header*/
 header {
@@ -86,10 +86,13 @@ header .mobile .flex {
   }
   nav li {
     padding-left: 0rem;
+    margin-bottom: -0.5rem;
   }
+
   header ul {
     height: 4rem;
   }
+
   .header .desktop {
     display: none;
   }
@@ -109,7 +112,7 @@ header .mobile .flex {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: #0A4A69;
+  color: #041E42;
   font-weight: bold;
   max-width: 30%;
   margin-left: 1.5rem;
@@ -121,7 +124,7 @@ header .mobile .flex {
 
 .everyday p {
   color: #E8E8E8;
-  background-color: #0A4A69;
+  background-color: #041E42;
   padding: .5rem;
   text-align: center;
 }
@@ -315,7 +318,7 @@ header .mobile .flex {
 
 .thesis .left {
   max-width: 60%;
-  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  padding: 0rem 1rem 1.5rem 1.5rem;
 }
 
 .left video {
@@ -344,6 +347,11 @@ header .mobile .flex {
 
 .exhibit.flex {
   align-items: center;
+}
+
+.exhibits .specifics {
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
 }
 
 @media only screen and (max-width: 701px) {
